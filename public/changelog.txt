@@ -1,0 +1,471 @@
+- 2.34.4 : 2024-12-03
+        * requested by @Willem a way to turn off the snow effect because it made some browsers lag a lot.
+
+- 2.34.3 : 2024-11-26
+        + added total reps and total sets count on the journal's post.
+        * fixed/retouched the colors on dark mode because I know dark mode looked like shit...
+        * Hided the "get fit" banner on the index page because in that page she is already being used in the main callout banner.
+
+- 2.34.2 : 2024-11-25
+        * Bug fix reported by @asambol : An error was happening when there was no session available and the app tried to access a session property. This error made the page look all white, nothing loaded in Safari. My bad, forgot to check for a null session.
+
+- 2.34.1 : 2024-11-23(2)
+        * Bugfix reported by @Jhn79 : Some buttons dissapeared when viewed on a small screen like a tablet.
+        * Fix color of the text of the search box in dark mode.
+        + Branding: Added animated side banner
+
+- 2.34.0 : 2024-11-23
+        + Search functionality in the explore page.
+        
+- 2.33.2 : 2024-11-21
+        * big fix the "edit log" button was visible in other's people's logs for some reason.
+        * the token used to get the contributors stopped worked, mabe someone over used it? 
+        * compress menu items to use less vertical space 
+        * added "ai podcast" video in about page.
+        * Bug reported by @ndefilippo : on the achievements badges, in the edge case of a minimum value being tested, some extra decimals in the comparision against the minimum value were making the condition to fail.
+
+- 2.33.1 : 2024-11-16
+        * some ui tweaks here and there 
+        * fix: side manues were not working on iOS
+        * the log editor now has it's own page, and it is not a modal. I think it looks cleaner that way...
+        * improve logo visibility when dark mode is active... still not perfect.
+        * added "how to add exercise" question in FAQ 
+        * adjusted mobile view of log visualization to make all the elements visible without breaking the layout...
+
+- 2.33.0 : 2024-11-12
+        + animated logo on save journal
+        + animated banner on guest's home.
+        + added list of contributors from github in the about page.
+
+- 2.32.2 : 2024-11-04
+        * some visual cosmetic tweaks here and there to improve the layout...
+
+- 2.32.1 : 2024-11-03
+        * increase size of side menu handles on mobile 
+        * fix drag functionality of the stopwatch widget 
+        * removed borders from non primary buttons in the editor to simplify the visual 
+        + addded decorative snow effect active on christmas eve 
+        * SBD rank page layout retouches
+        + readded the guy banner as logo and themed it for christmass and newyear eve. 
+        * changed color of signin button on landing page to contrast with the background because some ppl was not noticing it...
+
+- 2.32.0 : 2024-10-31
+        + Added by @rtdog : Feature to save Journal with Ctrl-Enter
+        - removed the twitter timeline widget in the about section since it doesn't work anymore for some reason...
+        * added display for when the announcements widgets in the about section has no announcements...
+
+- 2.31.3 : 2024-10-26 
+        * Reported by @Pouja : "if I add some text after a weight x reps x sets line, it would remove all spaces" Ufff... my bad. Sorry. Fixed.
+        
+- 2.31.2 : 2024-10-21
+        * Reported by @rtdog Distance conversion to "LB" off by 2 decimal places --> https://github.com/bandinopla/weightxreps-client/issues/29
+        
+- 2.31.1 : 2024-10-11
+        * Reported by @jimr1603 : A bug was introduced in 2.31.0 that caused the google sign in to fail. My bad... 
+
+- 2.31.0 : 2024-10-10
+        + Added (actually yesterday) OAuth2 and the new "Developer API" and "Connected Services" sections.
+        * fix bug in tags parser (trailing spaces caused the tag definition to be ignored)
+        + added a Jest test to test the parsing of a log.
+
+- 2.30.6 : 2024-08-20
+        * Reported by @Duke309 : The autosave popup is appearing unexpectedly. I reviewed the code and made some adjustments trying to limit the reasons why it whould appear and making sure it doesn't in known scenarios.
+
+- 2.30.5 : 2024-08-12
+        * Improved the banners using Flux(pro) AI 
+        
+- 2.30.4 : 2024-08-09
+        * Suggested by @asambol : allow RPE values from 1 to 10 instead of just from 6 to 10.
+
+- 2.30.3 : 2024-08-08
+        * Bug report by @asambol : in the journals the RPE annotation are persed incorrectly as a reference to a username in some cases.
+        
+- 2.30.2 : 2024-08-01
+        * Reported by @Duke309 : the recover autosave popups all the time unnecesarly when editing new days.
+
+- 2.30.1 : 2024-07-30
+        * Requested by @Breezy : Add the posibility to filter by age in the SBD Rank.
+        * fixed the layout so in mobile the charts stack on top of each other... my bad.
+        * other small improvements in the layout, changing positioning of tests and altering visibility of some.
+
+- 2.30.0 : 2024-07-21
+        + Added an auto-save mechanic on the log's editor. As pointed by @jimr1603 sometimes the browser will refresh the page if you leave it on too long and all logged data will be lost. Now, the editor will save whatever you type and if you open it again it will detect previously autosaved data and ask you if you want to use that.
+
+- 2.29.1 : 2024-04-28
+        * bug fix in backend: thanks to @Kandrase for pointing this out. Some journals failed to load due to trying to access an undefined property (Cannot read property)
+
+- 2.29.0 : 2024-03-26
+        + Revived the forums! (˵ ͡° ͜ʖ ͡°˵)
+
+- 2.28.0 : 2024-03-18
+        + Added "Normal Gym Rank" a rank for the people that trains casually not with an athletic goal in mind.
+        * fix bug introduced in 2.27.3 (changelog loading multiple times... oops!)
+
+- 2.27.3 : 2024-03-18
+        * Thanks to @Aizzer_1 for reporting the bug that math symbols and others were not being saved. My bad, I introduced this bug when tyring to remove "weird" characters.
+        * Added star icon next to usernames to recognize users for their valuable feedback and bug reports.
+
+- 2.27.2 : 2024-03-16
+        * "blank log" display to improve feedback
+        * increase text of user's journals a bit 
+        * removed link youtube playlist of development of the older version of the site 
+        * removed box shadow in landing page banner to let the broken paper effect blend with the background 
+        * improved the visibility of calendar's cells in darkmode.
+        * fixed silent error due to missplaced code block.
+
+- 2.27.1 : 2024-03-15
+        * handle the case of missing exercise reference in the split by type erow renderer.
+        * added a "blank log" message to give better visual feedback in the case of an intentional empty log.
+        * decreased opacity of calendar's future dates to visually separate them from present dates.
+        * increased the size of the user tag chip in the logs to make them more visible.
+        * corrented misspelled username racuna in the changelog for version 2.27.0
+        * fix default avatar issue when country code is XX (a.k.a. not set) and user has no avatar hash...
+
+- 2.27.0 : 2024-03-14
+        + !! Added posibility to log Distance & Time !!
+        * suggested by @racuna NEW importer: progressionapp
+        * fixed responsivness of importer's table on smaller screens
+        * fixed hevyapp & strongapp importers to use this new format 
+        * improve journal save operation ui feedback
+        * added "no content" ui if jrange has no weight x reps data.
+        * lots of other tweaks and fixed I found during the development of the new format.
+
+- 2.26.7 : 2024-03-06
+        * Round estimated values (~1RMs and Unit change) to nearest multiple of 5.
+        * for SBD Rank, calculate 1RM using the same formula as the server, since it gives more realistic estimations.
+
+- 2.26.6 : 2024-03-06
+        * added a status display box for when the webapp is updating and it is ready to take over the old contents.
+        * fix: round value of the user's estimated 1RM in the community stats side widget.
+        * fix: in SBD Rank side widget, wait for load operation to end before showing "no data" message 
+        * in the modal window showing the followers/following added a visual display for the case of no users found.
+
+- 2.26.5 : 2024-03-06
+        * Added missing posibility to delete the user profile picture
+        * Increase visibility of the heatmap marker for the current user 
+        * bugfix: reset SBD Score context on each exercise block render (was causing the "SBD Score used here" label to appear on placed that didn't used it)
+
+- 2.26.4 : 2024-03-05
+        * Spotted thanks to @naughtyclue : time user tags were not being recognized if ending with "s" ... I was expecting "min" not "mins" and "sec" not "secs"
+        I've also changed the color for string custom tags, that is, user tags that are only text. They will show in bluish to distinguish them from numerical tags with specific values.
+        
+- 2.26.3 : 2024-03-05
+        * Added the posibility to see followers and followings list.
+
+- 2.26.2 : 2024-03-05
+        * bugfix in the SBD Score & unification of calculations. 
+
+- 2.26.1 : 2024-03-04
+        * requested by @azothriel : the side menues on mobile are hard to swipe/open so I've increased the hitbox azea and reduced the required gesture needed to determine the desired intent.
+        + FAQ: added posibility to get a permalink to the question (and mecanic to link to a question) in case someone wants to share a link to a particular one.
+        * changed "help" and "about" menu icons (they looked too similar)
+        * bugfix: SBD Score was showing wrong values (showing mixed/old values)
+
+- 2.26.0 : 2024-03-03
+        + Mayor layout redesign & new banners 
+        + NEW! in the "home" (when logged) a side banner shows an overview of what was done by the user.
+        + NEW! in the global feed, a side widget shows the current TOP 3 in the squat, bench, deadlift and OHP for the month.
+        + NEW! Heat-map in the comunity stats showing the density of distribution of people lifting a particular weight.
+        + NEW! in the comunity stats, a side widget shows an overview display + rank of the current user in relation to the rest.
+        + NEW! SBD Score in the journals, next to each relevant set. A 5-Stars ranking based on data from openpowerlifting.org 
+        + NEW! SBD Rank side widget shows the recent lifts by the user and how they compare with the lifts from openpowerlifting.org 
+        + Added the videos section, experimental, want to see if this takes form or not... shows recent videos posted in logs.
+        + added link to our X account.
+        * Improved the FAQ/HELP section, with more questions and better filtering of them. 
+        * SBD Rank data update
+
+
+- 2.25.2 : 2024-02-24
+        * restyled some key action buttons to make them pop. 
+        * erow "Personal Records" button changed to just an icon (to make more space)
+        * "OG" indicator on users with more than 10 years in the site.
+        * added icons in the settings page to make it easier to find sections.
+        * pulse animation in calendar on the selected dates.
+
+- 2.25.1 : 2024-02-23
+        * Dark mode & palette tweaks
+        * Bar Icons from css spritesheet to canvas (looks a bit nicer)
+
+- 2.25.0 : 2024-02-19
+        + added tiny widget to see all the years logged and sync the navigation between the calendars to quickly switch years.
+
+- 2.24.0 : 2024-02-18
+        + added year overview calendar in the journals, to see the entire year overview of what was done.
+        * moved button "my exercises" to the contextual menu 
+        * moved button "follow" and "send DM" to the user card on the left 
+
+- 2.23.2 : 2024-02-16
+        * Thanks to @Tribble_Fun for making notice that Strongapp exports diferent columns on iOS and Android in the csv, so i had to modify the code to account for that.
+        ? I think it might happen the same on Hevyapp importer (because they are basically clone apps...) but I don't have an iPhone to test.
+
+- 2.23.1 : 2024-02-15
+        * fix importers to handle units changes and other cases.
+        + allowed to select a zip file continaing a cvs 
+
+- 2.23.0 : 2024-02-12
+        + Requested by @Tribble_Fun : Added option to import a cvs backup from hevyapp.com
+
+- 2.22.0 : 2024-02-10
+        + Added, in the settings, the option to import the backup file from weightxreps.net 
+        + Requested by @Indobesar : added the posibility to import a backup file from StrongApp
+
+- 2.21.1 : 2024-02-03
+        * Added ALT+TAB as key combination to trigger the autocomplete as suggested by @mm_42 to be used in Mac as quote "since cmd+space shortcut is widely used for spotlight search"
+
+- 2.21.0 : 2024-02-02
+        + Requested by @Krustenviech : "change the calendar view to starting on monday from top to bottom sunday"
+        (Added as a tiny arrow below or above the day Monday on the calendar, if you click on it, it will set the new first day of the week)
+        
+- 2.20.2 : 2024-01-29
+        * bug fix: the "copy logs of" button was not working correclty. 
+
+- 2.20.1 : 2024-01-29
+        * Made the web log editor bigger instead of a small modal. 
+        * Added loading indicator on the "edit log buttons" to show a spinner when the editor itself is loading.
+        * Improved the editor's feedback UI a bit.
+
+- 2.20.0 : 2024-01-17
+        + Added posibility to download the logs directly to Dropbox and Google Drive.
+        * Changed the position of the "download logs" box in the settings to the top of the settings.
+
+- 2.19.5 : 2024-01-11
+        * Bugfix in SBD Stats section: unit convertion from KG to LB: https://github.com/bandinopla/weightxreps-client/issues/20
+        * Updated lifts data
+
+- 2.19.4 : 2023-12-30
+        * restore "send global message" button that I removed by accident on the last update... :)
+        * Bug FIX: @campertug reported that the download journal was not working. Indeed, it had a but, my bad! 
+
+- 2.19.3 : 2023-12-21
+        * changed the ganner for some AI generated models representing each sport this site is best suited for.
+
+- 2.19.2 : 2023-12-21
+        * Brief modifications to make the website a tiny little bit more "friendly" on a mobile browser......
+
+- 2.19.1 : 2023-08-04
+        * @Sheepwarrior asked for another method to trigger the autocomplete since on the ipad the CMD+Space triggers the search command. So added SHIFT+SPACE 
+
+- 2.19.0 : 2023-02-28
+        + added a color scheme editor. To allow users pick their own colors in case they want it. 
+        * bug fix. Reported by @bartman | Journal log was showing old data on re-edit.
+
+- 2.18.2 : 2023-02-26
+        * bug fix . Reported by @asambol : Editor was behaving weird when copy & pasting chunks of texts.
+
+- 2.18.1 : 2023-02-26
+        * added user tag format variation: 1h 25m  | format idea by @asambol
+
+- 2.18.0 : 2023-02-26
+        + added a stopwatch on the journal editor window. @bartman suggested a set of countdowns, but i think a stopwatch can serve that function and more.
+
+- 2.17.0 : 2023-02-25
+        + Implemented "copy log as template", idea suggested by @bartman
+
+- 2.16.4 : 2023-02-25
+        * click on line charts sends you to the date clicked 
+        * RPE chip fix to allow showing a wider range of values 
+        * weight value disable line break
+        + added icons on the user tags chips to visually identify them quicker
+        * RANK user tag type visual representation as a sets of starts.
+
+- 2.16.3 : 2023-02-25
+        + Added "rank" user tag format. Forgot it, thanks to @asambol for noticing it!
+        * fixed journal parsing. I reported the issue to CodeMirror : https://github.com/codemirror/codemirror5/issues/7023
+        * prefixed the tag type in the tag's value Chip component to be able to see the type of data it was interpreted. 
+
+- 2.16.2 : 2023-02-24
+        * Bugfix reported by @asambol : tag type ID was too long and DB was cutting it... 
+
+- 2.16.1 : 2023-02-24
+        * improved the tutorial in the editor and added sames for logging tags.
+
+- 2.16.0 : 2023-02-23
+        + feature requested by @asambol : Custom user defined tags. 
+        * Bug fixes (found during feature implementation) 
+            - backdrop, if error, was appearing. It shouldn't.
+            - calendar dates range was missing a few days on the search.
+            - emails were not showing the name of the sender on the body.
+        * made the journal logs monospaced, to allow show ascii art or format text with spaces. 
+
+- 2.15.3 : 2023-02-14
+        * Comments box fix/tweak
+        * Re-enabled the sending of emails when a message is sent and the option to unsub from this, both from the settings and within the email (unsub link)
+
+- 2.15.2 : 2023-02-13
+        * Fix bug journals, the first comment or like, once sent, was not being added/showed after sending it.
+
+- 2.15.1 : 2023-02-11
+        * Fix Firebase Login bug (forgot to add column in database)
+        * Refactor code to get the client's session better...
+        * Twitter challenge possible bugfix (not tested but spotted)
+
+- 2.15.0 : 2023-02-09
+        + Donate vía Twitter. Hold a tweet online for X amount of time and get Y amount of days as supporter.
+
+- 2.14.1 : 2023-02-08
+        * improved the session hashing method. ( sadly it will force everyone to login again after i apply this... )
+        * improved the Inbox UI and overall mechanics. Now it is splitted into notifications and direct messages.
+
+- 2.14.0 : 2023-02-05
+        + Backend open souced!
+        + Frontend open sourced!
+        - Removed the "Videos" section, i need to work on that more it was not working i think...
+        
+- 2.13.1 : 2023-02-01
+        * added postimg.cc link parsing...
+        * added parsing of B#W#D# style of description for Block. Week. Day. Example: B1W1D2 = Block 1 Week 1 Day 2.
+
+- 2.13.0 : 2023-01-28
+        + Added the "videos" section
+        
+- 2.12.1 : 2023-01-27
+        + added a link to the personal records section of each exercise next to their names to make it easyer to find. Suggested/Mentioned by @azothriel
+        + added a brief description on how the PRs table is layed out. Implicitly suggested by @azothriel
+        * fixed some bugs in the achievements calculations
+        + added link to changelog section in the about page to make it easyer to see.
+        + added Chinups/Pullups as a recognized exercise to be calculated in the community stats. 
+
+- 2.12.0 :
+        * fixed a bug relating invalid username on signup thanks to @pilerik
+        + Added "Achievements" section.
+
+- 2.11.3 :
+        * updated the data from the SBD stats 
+        * simplifyed the layout a big & reduced banners size.
+        
+- 2.11.2 :
+        * fix: reported by @azothriel : spelling from "espect" -> "expect"
+- 2.11.1 :
+        * fix. reported by @azothriel : when you save a log and just type the exercise name but no reps or sets and then try to edit that log, the exercises are "lost" and you lose that data that was actually used as a placeholder for later use.
+
+- 2.11.0 :
+        + added banner and link to t-shirt store
+        
+- 2.10.1 :
+        + added "nodding guy" gif on workout save >.<
+        * changed backdrop texture of editor (dashed pattern)
+        * added "running since" badge on the index 
+        * new answer on FAQ
+        * updated the fonts on about section to match the rest of the site.
+
+- 2.10.0 :
+        + added/designed some banners and changed some font styles to add a new style to the site 
+        * fixed some texts on the site intro and signup page.
+        + added link to waybackmachine to prove the site was made in 2011
+        * styled the editor window a bit
+        () wish: improve the graphic design of the site
+
+- 2.9.5 :
+        * bug reported by @Bartman: set compression on edit mode was losing data on a particular scenario. 
+        * changelog page line wrap fix.
+        * signup page fontsize fix
+        + added username links in referenced users that reported bugs on the changelog.
+
+- 2.9.4 :
+        * bug reported by @azothriel: the editor closes as soon as you click on the grey area sometimes causing complete data lost unintentionally/by accident.
+
+- 2.9.3 :
+        * fixed the "like" button on the journal (it was working but it was not giving feedback after clicking it)
+        + in comunity stats aded the posibility to see "best of the year".
+
+- 2.9.2 : 
+        * small load time improve. It was taking a bit too long to load.
+
+- 2.9.1 : 
+        * bug fix: Top menu was deforming after clicking "add log" making it go 2 lines. 
+
+- 2.9.0 :
+        + Virtual Gym Access. Work in progress! Let's see how this goes!
+        + global notification banner.
+
+- 2.8.0 : 
+        + Added social media links section in user's profiles. So they can share their social medias.
+        + Highlight effect on the "joined" label of users with more than 5 years in the site. 
+        * Bug fix on settings page. Unsure if it affected anyone, no one reported it, but spoted it and fixed it anyways.
+
+- 2.7.4 : Design/Cosmetic touches
+        * Added more info on the landing page to help new visitors understand better what this site is all about.
+        * fixed bug in versioning script
+        * small touches on the signup page.
+
+- 2.7.3 : Design/Cosmetic touches
+        * added some decorative lines in the background to give some color to the site.
+        * increased the size of the SBD stats on the journal's user card.
+        * changed some colors on the guest index page.
+
+- 2.7.2 : Dark Mode fix
+        * Fixed some colors in the dark mode so now it looks hopefully a bit better.
+        + changelog page. Instead of redirecting to the txt i made a page in the site.
+
+- 2.7.1 : Bug fixes
+        * More code splitting. Trying to make the initial bundle lighter.
+        * Fix in "red guy" banner. It was setting its source on every state change...
+
+- 2.7.0 : "Sign In With" using Firebase + many fixes.
+        + Implemented Firebase's Auth to allow login/signup with more credential providers: Twitter, Github, Phone.
+        + Added a few new illustrations of red lifters.
+        + Added / Improved the terms of service and privacy policy
+        * re-wrote version format to be https://semver.org/ compatible.
+        * several fixes all over the place regarding responsive layout
+        * Did more code splitting optimizations to lower the size of the initial bundle. Still more work is desired...
+
+- 2.6.3 : BUG FIX
+        * @ijzersterk_pouja --> youtube link using "shorts" format was not rendering the video.
+
+- 2.6.2 : Bug fix
+        * @ijzersterk_pouja --> si guarda en fecha no default y usa new exercise tiraba error.
+
+- 2.6.1 :* Varios code splitting y optimizations 
+        + YT video en SBDStats / SBDStats banner en home. 
+        * @Rasmushorslev/ reported Ctrl+Space not working on mac
+
+- 2.6.0 : SBD Stats 
+        + SBD stats section.
+        * several small adjustments / fixes all over the place...
+
+- 2.5.0 : "whos ahead" graph y "following" tab
+        + Graph showing "how's ahead" in the comunity stats.
+        * Oops! restored this tab that was hidden for some reason...
+
+- 2.4.1 : jeditor autocomplete sort enames by use
+        * the autocomplete pop will sort itself by the most used matched exercise instead of just blind alpahetical order.
+
+- 2.4.0 :+ Added sign in with google
+
+- 2.3.2 : Removed restrictions
+        * 2022.01.13 :: user @Markus pidió comentar esto porque usa el sitio tambien para trackear cardio, etc...
+        * Anyone can download their workouts now.
+
+- 2.3.1 : Bug fix 
+        * @Quadzilla::: comment box not showing
+        * @Bartman :: sets compresison bug in edit mode fixed.
+
+- 2.3.0 : change username + darkmode
+        + Setting to allow to change the username 
+        + "Dark mode" (can be improved....)
+
+- 2.2.3 : Fixes 
+        * RPE Table now is wider and breaks the limits of its container to show all 12 columns at the same time.
+        * Fix in inbox notification count, was not acting right...
+        + Prompt/Warning if hit save and no data is found for default date.
+
+- 2.2.2 : About Page 
+        + Links to video of old verison & playlist to developer updates. + small touch in the RPE CVS load module (visual).
+        + Added more info + STACK subsection. 
+
+- 2.2.1 : CVS upload fix
+        * que solo acepte .csv
+        * que tire error si no es un CSV
+
+- 2.2.0 : RPE CVS upload + Side Banner
+        + RPE table allows upload of CSV value
+        * fix en eblock render volume was not showing right unit (@skullengaged)
+        + about page links to videos
+        + side banners and red guy banner
+        * version auto increase on build
+
+- 2.1.0 + indicador de que CTRL+SPACE triggers autocomplete in editor
+        + Linear progress display cuando se esta cargando la session
+        + build number display abajo de todo y script que se actualiza cuando hacer un build
+
+- 2.0.0 : Published version 2! Sep 26, 2021

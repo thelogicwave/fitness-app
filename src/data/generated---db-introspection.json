@@ -1,0 +1,122 @@
+{
+  "possibleTypes": {
+    "BaseStat": [
+      "Estimated1RM",
+      "Heavyest",
+      "MostVolume"
+    ],
+    "ExecExerciseResponse": [
+      "ConfirmAction",
+      "Exercise"
+    ],
+    "IBy": [
+      "DM",
+      "ForumLike",
+      "ForumNotification",
+      "JComment",
+      "LikeOnDM",
+      "LikeOnJComment",
+      "LikeOnLog",
+      "StartedFollowing"
+    ],
+    "IForum": [
+      "ForumLike",
+      "ForumNotification"
+    ],
+    "IHasJOwner": [
+      "ForumLike",
+      "ForumNotification",
+      "JComment",
+      "LikeOnJComment",
+      "LikeOnLog"
+    ],
+    "IHasMessageID": [
+      "LikeOnDM",
+      "LikeOnJComment"
+    ],
+    "IHasText": [
+      "DM",
+      "ForumLike",
+      "ForumNotification",
+      "JComment",
+      "LikeOnDM",
+      "LikeOnJComment",
+      "SystemNotification"
+    ],
+    "IMessageRef": [
+      "DM",
+      "JComment"
+    ],
+    "INotification": [
+      "DM",
+      "ForumLike",
+      "ForumNotification",
+      "JComment",
+      "LikeOnDM",
+      "LikeOnJComment",
+      "LikeOnLog",
+      "StartedFollowing",
+      "SystemNotification"
+    ],
+    "ITO": [
+      "DM",
+      "ForumLike",
+      "ForumNotification",
+      "JComment",
+      "LikeOnDM",
+      "LikeOnJComment",
+      "StartedFollowing"
+    ],
+    "JeditorRow": [
+      "JEditorBWTag",
+      "JEditorDayTag",
+      "JEditorEBlock",
+      "JEditorNewExercise",
+      "JEditorText",
+      "UTagValue"
+    ],
+    "Notification": [
+      "DM",
+      "ForumLike",
+      "ForumNotification",
+      "JComment",
+      "LikeOnDM",
+      "LikeOnJComment",
+      "LikeOnLog",
+      "StartedFollowing",
+      "SystemNotification"
+    ],
+    "Setting": [
+      "BlockUsersSetting",
+      "CCSetting",
+      "ConnectedServicesSetting",
+      "Custom1RMFactorSetting",
+      "DOBSetting",
+      "DeleteAccountSetting",
+      "DeveloperConfigSetting",
+      "EmailSetting",
+      "OptionSetting",
+      "RPESetting",
+      "SocialMediasSetting",
+      "SupporterStatus",
+      "UsernameSetting",
+      "VoidSetting"
+    ],
+    "UserSetting": [
+      "BlockUsersSetting",
+      "CCSetting",
+      "ConnectedServicesSetting",
+      "Custom1RMFactorSetting",
+      "DOBSetting",
+      "DeleteAccountSetting",
+      "DeveloperConfigSetting",
+      "EmailSetting",
+      "OptionSetting",
+      "RPESetting",
+      "SocialMediasSetting",
+      "SupporterStatus",
+      "UsernameSetting",
+      "VoidSetting"
+    ]
+  }
+}

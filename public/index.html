@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta  name="twitter:widgets:autoload" content="off">
+    <meta
+      name="description"
+      content="Weight for reps is a training journal logging tool to help you keep track of your weight training."
+    />
+    <meta property="og:title" content="Weight For Reps">
+    <meta property="og:description" content="Be fit. Track your workouts!">
+    <meta property="og:image" content="https://weightxreps.net/cover.png">
+    <meta property="og:image:alt" content="Website's cover">
+    <meta property="og:url" content="https://weightxreps.net">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Weight For Reps">
+    <meta name="twitter:description" content="Be fit. Track your workouts!">
+    <meta name="twitter:image" content="https://weightxreps.net/cover.png">
+    <meta name="twitter:site" content="@weight_x_reps">
+
+    <!--<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Bebas+Neue|Azeret+Mono&display=swap" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22056619-2"></script> 
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date()); 
+        gtag('config', 'UA-22056619-2', { 'send_page_view': false }); 
+    </script>
+    
+    <style>
+        .loader {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: inline-block;
+        border-top: 3px solid #FFF;
+        border-right: 3px solid transparent;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+        }
+
+        @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        } 
+
+        .init {
+            width: 100vw;
+            height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            background-color: black;
+            position: fixed;
+            z-index: 9999;
+            padding: 0px;
+            ;
+        }
+        .appReady .init {
+            display: none;
+        }
+        .sysError .loader, #sys-error { display: none; }
+        .sysError #sys-error { display: inline-block; }
+        #sys-error {
+          color: red;
+          font-size: large;
+          font-family: monospace;
+          padding: 40px;
+        }
+    </style>
+ 
+
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Weight For Reps</title>
+  </head>
+  <body>
+    <div class="init" data-nosnippet>
+        <span class="loader"></span>
+        <span id="sys-error">
+          <h1>↯ Oops!</h1>
+          Failed to connect to the server (check your internet connection mabe?)...
+          <br/>Error detail ➡ <span>...</span>
+          <br/>
+          <br/>
+          Report it vía: admin@weightxreps.net or <a href="https://x.com/weight_x_reps">@weight_x_reps</a>
+        </span>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div> 
+  </body>
+</html>

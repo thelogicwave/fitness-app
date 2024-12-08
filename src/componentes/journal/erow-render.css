@@ -1,0 +1,15 @@
+.PR {
+    animation: pulse-animation 0.5s infinite ease-in-out;
+  }
+  
+  @keyframes pulse-animation {
+    0% {
+        background-color: rgba(255, 255, 0, 0.2); /* Start with 50% opacity */
+      }
+      50% {
+        background-color: rgba(255, 255, 0, 1); /* Peak at 100% opacity */
+      }
+      100% {
+        background-color: rgba(255, 255, 0, 0.2); /* End with 50% opacity */
+      }
+  }
