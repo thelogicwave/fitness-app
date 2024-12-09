@@ -24,8 +24,7 @@
     "rules": {
       "no-restricted-globals": "warn",
       "no-unused-expressions": "warn",
-      "@typescript-eslint/no-unused-expressions":"warn"
-
+      "@typescript-eslint/no-unused-expressions": "warn"
     }
   },
   "browserslist": {
@@ -48,6 +47,8 @@
     "@material-ui/styles": "^4.11.5",
     "@rive-app/react-canvas": "^4.16.1",
     "@use-gesture/react": "^10.3.0",
+    "ajv": "^6.12.6",
+    "ajv-keywords": "^3.5.2",
     "apollo-upload-client": "^16.0.0",
     "codemirror": "^5.62.3",
     "dropbox": "^10.34.0",
@@ -106,7 +107,7 @@
     "os-browserify": "^0.3.0",
     "process": "^0.11.10",
     "react-app-rewired": "^2.2.1",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.1",
     "semver": "^7.3.2",
     "source-map-explorer": "^2.5.2",
     "stream-browserify": "^3.0.0",
